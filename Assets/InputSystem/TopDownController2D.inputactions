@@ -24,7 +24,7 @@
                     "initialStateCheck": true
                 },
                 {
-                    "name": "LeftClick",
+                    "name": "MouseLeft",
                     "type": "Value",
                     "id": "c0263c29-0600-4f66-9eaa-7bd3cd2d6ff7",
                     "expectedControlType": "Button",
@@ -52,7 +52,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "KeyboardMouse",
-                    "action": "LeftClick",
+                    "action": "MouseLeft",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },

@@ -1,9 +1,29 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class TopDownController : MonoBehaviour
 {
+    public event Action<Vector2> OnMoveEvent;
+    public event Action<Vector2> OnLookEvent;
+    public event Action OnAttackEvent;
 
+    protected virtual void Awake()
+    {
+        
+    }
 
+    public void CallMoveEvent(Vector2 direction)
+    {
+        OnMoveEvent?.Invoke(direction);
+    }
+    public void CallMLookEvent(Vector2 direction)
+    {
+        OnLookEvent?.Invoke(direction);
+    }
+    public void CallAttackEvent()
+    {
+        OnAttackEvent?.Invoke();
+    }
 }
