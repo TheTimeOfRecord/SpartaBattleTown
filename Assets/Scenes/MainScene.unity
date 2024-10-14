@@ -138,6 +138,7 @@ GameObject:
   - component: {fileID: 377627851}
   - component: {fileID: 377627850}
   - component: {fileID: 377627855}
+  - component: {fileID: 377627857}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -290,6 +291,22 @@ CapsuleCollider2D:
   m_Offset: {x: -0.02, y: 0.35}
   m_Size: {x: 0.42, y: 0.7}
   m_Direction: 0
+--- !u!114 &377627857
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 377627848}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c5f5e2810b494c48bd1aa3b981faa9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  armRenderer: {fileID: 0}
+  armPivot: {fileID: 518091445}
+  characterRenderer: {fileID: 0}
+  characterPivot: {fileID: 1717059726}
 --- !u!1 &502590887
 GameObject:
   m_ObjectHideFlags: 0
@@ -7662,6 +7679,12 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!4 &518091445 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4396153468320487436, guid: c734732335e7d4f5bac755f5fca34c7c,
+    type: 3}
+  m_PrefabInstance: {fileID: 1332074382}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
